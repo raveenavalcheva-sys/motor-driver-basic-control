@@ -13,7 +13,7 @@ This project demonstrates basic DC motor wheel movement using an Arduino and mot
 - Jumper wires
 
 ## 🔌 Working Principle
-The Arduino sends digital HIGH/LOW signals to the motor driver inputs, controlling the direction of the DC motors.
+The Arduino controls two DC motors using a motor driver through four digital output pins (IN1, IN2, IN3, IN4). Based on the programmed logic, the pins are set HIGH or LOW to define motor rotation direction. In this project, both motors are activated simultaneously to move the wheels in one direction for 3 seconds. After that, all motor inputs are set LOW to stop the motors for 1 second before the cycle repeats. This process demonstrates basic open-loop motor control without sensors or feedback.
 
 ## 🎯 Result
 The DC motors successfully run in a fixed sequence. The robot moves in one direction for 3 seconds, stops for 1 second, and then repeats the cycle. This confirms correct motor driver wiring and proper Arduino control of motor direction using digital output signals.
